@@ -9,14 +9,16 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signout" element={<SignOut />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="*" element={"Page not found"} />
-      </Routes>
+      <main className=" max-w-6xl mx-auto px-3">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/signout" element={<SignOut />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="*" element={"Page not found"} />
+        </Routes>
+      </main>
     </BrowserRouter>
   );
 }

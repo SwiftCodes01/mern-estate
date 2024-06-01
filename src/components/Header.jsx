@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className=" bg-slate-200 shadow-md">
-      <div className=" max-w-6xl p-4 mx-auto flex justify-between items-center">
+      <div className=" max-w-6xl p-3 mx-auto flex justify-between items-center">
         <h1 className="flex flex-wrap font-bold text-sm sm:text-xl cursor-pointer">
           <span className="text-slate-500">Swift</span>
           <span className=" text-slate-700">Estate</span>
@@ -14,19 +14,19 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search....."
-            className=" bg-transparent focus:outline-none w-24 md:w-64"
+            className=" bg-transparent text-sm focus:outline-none w-24 md:w-64"
           />
           <FaSearch className=" text-slate-600" />
         </form>
 
         <ul className="flex items-center gap-4">
           <Link to="/">
-            <li className="hidden sm:inline text-slate-700 hover:text-slate-900 cursor-pointer">
+            <li className="hidden md:inline text-slate-700 hover:text-slate-900 cursor-pointer">
               Home
             </li>
           </Link>
           <Link to="/about">
-            <li className="hidden sm:inline text-slate-700 hover:text-slate-900 cursor-pointer">
+            <li className="hidden md:inline text-slate-700 hover:text-slate-900 cursor-pointer">
               About
             </li>
           </Link>

@@ -8,12 +8,12 @@ const app = express();
 mongoose
   .connect(process.env.MONGO)
   .then(() => {
-    console.log("Connected to MongoDB");
+    console.log("Database connected");
   })
   .catch((err) => {
     console.log(err);
-  });
+  })
 
 app.listen(3000, () => {
-  console.log("Server running on port 3000!!");
+  console.log("Server running on port 3000!");
 });
